@@ -23,7 +23,7 @@ class Worker(var input: DataSource, var output: DataSource) extends Callable[Int
           }
         }
         case Wait => {
-          Thread.currentThread().wait(1000)
+          Thread.sleep(5000)
         };
       }
     }
